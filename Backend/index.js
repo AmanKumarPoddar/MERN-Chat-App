@@ -16,10 +16,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 
-const corsOption = {
-  origin: "http://localhost:3000",
-  credentials: true,
-};
+// const corsOption = {
+//   origin: "http://localhost:3000",
+//   credentials: true,
+// };
+const corsOption =  { origin: 'https://mern-chat-app-drab-one.vercel.app', // Allow requests from your frontend URL
+methods: ['GET', 'POST', 'PUT', 'DELETE'],
+allowedHeaders: ['Content-Type', 'Authorization'],
+credentials:true
+}
+
 app.use(cors(corsOption));
 
 //routes
