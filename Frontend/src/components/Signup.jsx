@@ -70,7 +70,7 @@ const Signup = () => {
               className="w-full input input-bordered h-10 "
               type="text"
               name=""
-              id=""
+              id="username"
               placeholder="Username"
               value={user.username}
               onChange={(e) => setUser({ ...user, username: e.target.value })}
@@ -84,7 +84,7 @@ const Signup = () => {
               className="w-full input input-bordered h-10 "
               type="password"
               name=""
-              id=""
+              id="password"
               placeholder="Password"
               value={user.password}
               onChange={(e) => setUser({ ...user, password: e.target.value })}
