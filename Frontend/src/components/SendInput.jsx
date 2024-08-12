@@ -14,7 +14,8 @@ const SendInput = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:8080/api/v1/message/send/${selectedUser?._id}`,
+        // `http://localhost:8080/api/v1/message/send/${selectedUser?._id}`,
+        `https://mern-chat-app-s9hq.onrender.com/api/v1/message/send/${selectedUser?._id}`,
         { message },
         {
           headers: {

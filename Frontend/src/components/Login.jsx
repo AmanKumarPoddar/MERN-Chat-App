@@ -18,7 +18,8 @@ const Login = () => {
     console.log(user);
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/v1/user/login",
+        // "http://localhost:8080/api/v1/user/login",
+        "https://mern-chat-app-s9hq.onrender.com/api/v1/user/login",
         user,
         {
           headers: {

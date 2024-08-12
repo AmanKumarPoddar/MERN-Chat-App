@@ -18,7 +18,8 @@ const Sidebar = () => {
   const logoutHandler = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/v1/user/logout"
+        // "http://localhost:8080/api/v1/user/logout"
+        "https://mern-chat-app-s9hq.onrender.com/api/v1/user/logout"
       );
 
       if (socket) {
